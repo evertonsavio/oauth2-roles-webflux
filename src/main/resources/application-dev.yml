@@ -1,0 +1,15 @@
+# ======================================================================================================================
+# STAGE - DEVELOP PROFILE
+# ======================================================================================================================
+server:
+  port: 7006
+  error:
+    include-message: always
+
+spring:
+  profiles: dev
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: https://auth.hausenn.com.br/auth/realms/hausenn/protocol/openid-connect/certs

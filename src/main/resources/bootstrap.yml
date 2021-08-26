@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: resource-service
+
+---
+spring:
+  profiles: dev
+  application:
+    name: resource-service
+
+---
+spring:
+  profiles: prod
+  application:
+    name: resource-service

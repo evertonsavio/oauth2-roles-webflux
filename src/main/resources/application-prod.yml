@@ -1,0 +1,15 @@
+# ======================================================================================================================
+# PRODUCTION - MASTER PROFILE
+# ======================================================================================================================
+server:
+  port: 8001
+  error:
+    include-message: always
+
+spring:
+  profiles: prod
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: https://auth.hausenn.com.br/auth/realms/hausenn/protocol/openid-connect/certs
